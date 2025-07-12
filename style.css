@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color, #f5f5f5);
+  color: var(--text-color, #000);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #4e89ae;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #4e89ae;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #e9f1f7;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.text-container p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.hire-btn,
+.down-cv,
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background-color: #4e89ae;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.hire-btn:hover,
+.down-cv:hover {
+  background-color: #3b6c89;
+}
+
+.model {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-container,
+.skills-container,
+.services-text,
+.contact-me {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-box {
+  width: 100px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.skill-box i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #4e89ae;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.box-container .box-1,
+.box-container .box-2,
+.box-container .box-3 {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #4e89ae;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
